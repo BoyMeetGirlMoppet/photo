@@ -1,0 +1,159 @@
+/*此文件包含样照样式*/
+
+/************************样照大图模块********************************/
+#sample-big{
+	width:100%;
+	position:relative;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#sample-big>.sample-big-bg img{
+	width:100%;
+	transition:transform 3s ease;
+}
+
+#sample-big>.cover{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+}
+
+#sample-big>.cover .cover-text{
+	width:100%;
+	height:600px;
+	position:absolute;
+	bottom:400px;
+	left:0;
+	text-align:center;
+}
+
+#sample-big>.cover>div:first-child{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100px;
+	background:#F2F2F0;
+}
+
+#sample-big>.cover>div:last-child{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:100px;
+	background:#F2F2F0;
+}
+
+#sample-big div.cover-text p{
+	color:#fff;
+	font-size:80px;
+	font-weight:bold;
+	margin-top:0;
+}
+
+#sample-big div.cover-text p span{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	opacity:0;
+}
+
+@keyframes down{
+	100%{
+		transform:translate3D(0,250px,0) rotate3D(1,1,1,720deg);
+		opacity:1
+	}
+}
+
+#sample-big>.cover>.cover-text a{
+	position:absolute;
+	bottom:1px;
+	left: 50%;
+	margin-left: -35px;
+	text-align:center;
+	line-height:45px;
+	font-size:30px;
+	padding-bottom:2px;
+	color:#fff;
+	border-radius:10px;
+	width:106px;
+	height:50px;
+	box-shadow:0 0 20px #fff inset;
+	opacity:1;	
+}
+
+#sample-big>.cover>.cover-text a:hover{
+	animation:shake 1s linear;
+}
+
+@keyframes shake{
+	10%,90%{
+		transform:translate3D(-1px,0,0);
+	}
+	20%,80%{
+		transform:translate3D(2px,0,0);
+	}
+	30%,50%,70%{
+		transform:translate3D(-4px,0,0);
+	}
+	40%,60%{
+		transform:translate3D(4px,0,0);
+	}
+}
+
+/*****************************样照小图模块************************************/
+#sample-small{
+	width:1240px;
+	height:605px;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+}
+
+#sample-small>div>dl>dt img{
+	width:400px;
+	margin:17px 0;
+	transition:all .5s linear;
+}
+
+#sample-small>div>dl{
+	position:relative;
+}
+
+#sample-small>div>dl>dd{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	font-size:30px;
+	font-weight:bold;
+	color:#fff;
+	display:flex;
+    justify-content: center;
+    align-items:center;
+	opacity:0;
+	transition:opacity .5s linear;
+}
+
+#sample-small>div>dl>dd p{
+	text-align:center;
+}
+
+#sample-small>div>dl:hover dt>img{
+	transform:scale(1.05);
+	opacity:.7;
+}
+
+#sample-small>div>dl:hover dd{
+	opacity:1;
+}
+
+#sample-small div:nth-child(2) dl{
+	height: 605px;
+}
+#sample-small div:nth-child(2) dl>dt img{
+	height: 564px;
+}

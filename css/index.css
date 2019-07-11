@@ -1,0 +1,187 @@
+.nav{
+    background: #808080;
+}
+.top{
+    margin-top: .5rem;
+}
+.top_nav{
+    justify-content: flex-end;
+    align-items: center;
+}
+.top_nav li{
+    margin-right: 1rem;
+
+}
+.top_nav li a{
+    font-size: 12px;
+    color: #fff;
+    margin-left: 5px;
+}
+.search{
+    width: 200px;
+    height: 30px;
+    padding: 0 10px 0 30px;    outline: none;
+    box-sizing: border-box;
+    border: 2px solid #969696;
+    background: url(../img/search.png) no-repeat 2px;
+}
+.top_nav li a:hover{
+    color: #0056b3;
+}
+.bottom_nav{
+    
+    background: rgba(128, 128, 128, .5);
+
+}
+.bottom_nav ul li{
+    text-align: center;
+    width: 12%;margin: 0 .5rem;
+    justify-content: flex-start;
+}
+.bottom_nav ul li a{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+.banner{
+    width: 1240px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+}
+.banner_img{
+    position: absolute;
+    width: 1240px;
+    height: 500px;
+    overflow: hidden;
+}
+.banner_img img{
+    vertical-align: bottom;
+    height: 450px;
+    width:960px;
+}
+.banner .banner_img li{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -275px 0 0 -480px;
+}
+.prev,.next{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    opacity: .5;
+    top: 200px;
+    transition: all .3s linear;
+    cursor: pointer;
+    z-index: 3;
+}
+.prev img,.next img{
+    width: 64px;
+    height: 64px;
+}
+.next{
+    right: 0;
+}
+.img_big img{
+    transition: all 3s ease;
+}
+.chang_guan{
+    background: #808080;
+}
+.chang_guan .title{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 50px;text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+/*六大场馆*/
+.view_photo{
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.view_photo div{
+    margin-top: 60px;
+    margin-right: 25px;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.view_photo img:first-child{
+    position: absolute;
+    top: 60px;
+    left: 110px;
+    border-radius: 50%;
+    transition: all .8s ease;
+}
+.view_photo div:hover img:first-child{
+    transform: translate3D(-60px,-50px,0);
+}
+.view_photo img:nth-child(2){
+    position: absolute;
+    width: 286px;
+    top: 15px;
+    left: 65px;
+
+}
+.view_photo p{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: #808080;
+    top: 170px;
+    left: 230px;
+    transition: all .5s ease;
+}
+.view_photo div:hover p{
+    transform: scale(1.1);
+}
+
+/*人气外景*/
+.outdoor{
+    position: relative;
+    height: 600px;
+}
+.outdoor_title{
+    border-bottom: 5px solid #dbdbdb;
+    position: relative;
+    margin-top: 130px;
+}
+.outdoor_title span{
+    position: absolute;
+    color: #808080;
+    background: #f2f2f2;
+    font-size: 50px;
+    font-weight: bold;
+    top: -25px;
+    left: 50%;
+    margin-left: -178px;
+}
+
+
+.footer{
+    background: #808080;color: #fff;
+    margin-top: 20px;
+}
+.footer p{
+    margin-bottom: 1rem;
+}
+.footer p a{
+    margin: 0 1.5rem;color: #fff;
+}
+.footer p a:hover{
+    color: #BCBCBC;
+}
+
+
+
+
