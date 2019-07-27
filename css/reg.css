@@ -1,0 +1,100 @@
+
+.reg{ 
+     /* height: 100%; */
+     width: 332px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin-left: -166px;
+     margin-top: -117px;
+     z-index: 100;
+     overflow: hidden;
+}
+.reg_info{
+    margin: 0 auto;
+}
+
+.reg_info div>input{
+    
+    box-sizing: border-box;
+    width: 270px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+/* background: #fff; */
+}
+.reg_info div>p{
+
+    font-size: 14px;
+    margin: 0px 0 10px;
+    
+}
+.reg_info div:first-child input{
+    background-image: url("../img/uname.jpg") ;
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+}
+.reg_info div:nth-child(2) input{
+    background-image: url("../img/pwd.jpg") ;
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+}
+.reg_info div:nth-child(3) input{
+    background-image: url("../img/pwd.jpg") ;
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+}
+.reg_info div:nth-child(4) input{
+    background-image: url("../img/email.jpg") ;
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+}
+.reg_btn>button{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 270px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: bold;  
+    border: none;
+    line-height: 35px;
+    cursor:pointer;
+    opacity: .8;
+    color: #fff;
+    background-color: #37b5f9;
+    border-radius: 2px;  
+}
+.reg_btn>button:hover{
+    opacity: 1;
+}
+/* 正则验证 */
+.regExp_success,.regExp_fail{
+	background-repeat:no-repeat;
+    background-position:5px center;
+	display:block;
+}
+span.regExp_success{
+    display: inline;
+}
+/* 验证通过后显示 */
+.regExp_success{
+    background-image:url("../img/ok.png");
+	padding-left:20px;
+	width:0px;height:20px;
+	overflow:hidden;
+}
+/* 正则失败时显示 */
+.regExp_fail{
+    background-image:url("../img/err.png");
+    border:1px solid red;
+    background-color:#fff;
+    color:Red;
+    padding:5px 0px 5px 40px;
+    width: 270px;
+    box-sizing: border-box;
+    font-weight: bold;
+
+}
+
+
+

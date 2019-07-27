@@ -150,6 +150,7 @@
 .outdoor{
     position: relative;
     height: 600px;
+    margin-bottom: 80px;
 }
 .outdoor_title{
     border-bottom: 5px solid #dbdbdb;
@@ -166,6 +167,121 @@
     left: 50%;
     margin-left: -178px;
 }
+.outdoor_photo{
+    position: relative;
+    width: 1240px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 40px;
+  
+    /* background: #0056b3; */
+    height: 620px;
+    justify-content: space-around;
+}
+.outdoor_photo div{
+    width: 400px;
+    height: 270px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    
+}
+.outdoor_photo div img{
+    position: absolute;
+    transition: all 1s ease;
+}
+.outdoor_photo div:hover img{
+    transform: scale(1.1);
+}
+.outdoor_photo div:hover .outdoor_photo_text{
+    display: block;
+}
+
+div.outdoor_photo_text{
+    width: 400px;
+    height: 75px; 
+    position: absolute;
+    top: -20px;
+    text-align: center;
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+    z-index: 99;
+    display: none;
+}
+div.outdoor_photo_text h3{
+    margin: 10px 0;
+}
+
+/* 客户欣赏 */
+.view-photo{
+    width: 1240px;
+    height: 932px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.view-photo li{
+    position: relative;
+    height: 436px;
+    /* width: 295px; */
+   
+}
+.view-photo .view_photo_big img {
+    width: 610px;
+    height: 436px;
+}
+.view-photo li img{
+    width: 295px;
+    height: 436px;
+}
+.view-photo li div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 295px;
+    height: 436px;z-index: 99;
+    transition: all 1s ease;
+}
+.view-photo .view_photo_big div{
+    width: 610px;
+}
+
+.view-photo li:hover div{
+    background-color: rgba(0,0,0,.4);
+}
+.view-photo li div>h1{
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    margin-left: -90px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Microsoft yahei";
+    z-index: 99;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+.view-photo .view_photo_big div h1{
+    width: 360px;
+    height: 160px;
+    margin-left: -180px;
+}
+
+.view-photo li:hover h1{
+    opacity: 1;
+}
+
 
 
 .footer{
