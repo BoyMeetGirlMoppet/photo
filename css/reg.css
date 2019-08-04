@@ -1,4 +1,9 @@
-
+body{
+    height: 100%;
+    width: 100%;
+    background: url("../img/t0101159e3b99010e5e.jpg") no-repeat ;
+    background-size: cover;
+}
 .reg{ 
      /* height: 100%; */
      width: 332px;
